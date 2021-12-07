@@ -1,9 +1,11 @@
-Anleitung zum Set up:
-1. Xampp herunterladen
-2. Projekt bevorzugt mit IntelliJ clonen
-3. unter dem Ordner Datenbank die Datei sep.sql , auf den Desktop schiebn.
-4. Xampp starten und dort auf apache und mysql auf starten drücken.
-5. im Browser localhost/phpmyadmin eingeben 
-6. dort die Datenbank importieren. Falls es nicht so einfach geht , dann neue Datenbank erstellen mit dem Namen sep und dorr deaufdrücken und dann sieht man importieren und dort vom desktop die datei sep.sql auswählen
-7. in intellij , run configuration gehen dort ein neue Application hinzufügen dort einmal als Namen Seever eingeben mit dem Sdk java 16 und man class als Server.SEP_Server dann auf ok drücken.
-8. nochmal auf edit configuration gehen und dann dort als Namen Client eingeben und als Main Class Client.Launch
+Installationsanleitung
+1. Laden Sie Xampp herunter und installieren Sie es.
+2. Laden Sie die Java Version 16.0.1 herunter und installieren Sie sie.
+3. Fügen Sie die neu heruntergeladene Java Version zu dem System Pfad hinzu.
+(Dazu öffnen Sie unter Windows 10 -> Systemumgebungsvariabeln bearbeiten, dann unter Umgebungsvariabeln fügen Sie den Pfad zur Java 16.0.1 bin ordner)
+4. Xampp öffnen, neben dem Reiter Mysql auf Config klicken, dann auf my.ini und dann unter max_allowed_packet setzen sie dies auf = 100M
+5. Starten Sie den MySQL Server, stellen Sie sicher, dass der Port 3306 für den MySQL Server verwendet wird.
+6. Starten Sie den Apache Server, falls Port 80 verwendet wird, dann geben Sie im Browser localhost/phpmyadmin ansonsten geben sie localhost:80/phpmyadmin
+7. Unter Phpmyadmin erstellen Sie eine neue Datenbank namens: sep (alles klein geschrieben)
+8. Starten Sie die Server.jar (in PowerShell in dem Ordner mit den Jar-Dateien den Befehl „java -jar Server.jar“ eingeben)
+9. Starten Sie die Client.jar (in PowerShell in dem Ordner mit den Jar-Dateien den Befehl „java -jar Client.jar“ eingeben)
