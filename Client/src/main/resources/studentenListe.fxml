@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller.Liste.StudentenListeController">
+    <children>
+        <TableView fx:id="tabelle" layoutX="53.0" layoutY="86.0" prefHeight="488.0" prefWidth="585.0">
+            <columns>
+                <TableColumn fx:id="Vorname" prefWidth="199.9999885559082" text="Vorname" />
+                <TableColumn fx:id="Nachname" prefWidth="232.6666488647461" text="Nachname" />
+                <TableColumn fx:id="matrNr" prefWidth="153.33334350585938" text="Matrikelnummer" />
+                <TableColumn fx:id="studentenId" prefWidth="26.0" text="Id" visible="false" />
+            </columns>
+        </TableView>
+        <Label layoutX="53.0" layoutY="31.0" text="Studentenliste der Lehrveranstaltung">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="suchtext" layoutX="481.0" layoutY="36.0" promptText="Suchen" />
+        <Button fx:id="suchen" layoutX="645.0" layoutY="36.0" mnemonicParsing="false" text="Suchen" onAction="#Suchen" />
+    </children>
+</AnchorPane>
